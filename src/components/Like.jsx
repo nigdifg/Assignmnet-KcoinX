@@ -22,7 +22,7 @@ const Like = (props) => {
     return (
         <div className="fixed bottom-0 mt-10 w-full items-center rounded-lg sm:py-[200px]  lg:py-[40px]">
             <div className="justify-center gap-[45px]">
-                {/* text */}
+               
                 <div className="flex flex-row items-center gap-5">
                     <div>
                         <h4 className="ml-10 mt-0 font-bold text-2xl text-black">
@@ -34,8 +34,6 @@ const Like = (props) => {
                                 "isInfinite": false,
                                 "autoplaySpeed": 5000,
                                 "spaceBetween": 20
-                               
-
                             }' className="mb-40 relative justify-between gap-5 items-center">
                             <div className="bg-white hs-carousel relative w-full rounded-lg">
                                 <div className="hs-carousel-body bg-white absolute flex flex-nowrap transition-transform duration-700">
@@ -46,6 +44,7 @@ const Like = (props) => {
                                                     <div className='flex flex-col items-center'>
                                                         <img src={coin.item.small} alt={coin.item.name} className="m-6 w-10 h-10" />
                                                         <p className="text-sm text-gray-500">{coin.item.symbol}</p>
+                                                        
                                                         <img src={coin.sparkline} alt="{coin.item.name}" />
                                                     </div>
                                                 </div>
