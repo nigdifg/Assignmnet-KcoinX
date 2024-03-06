@@ -4,7 +4,7 @@ import two from '../assets/two.png'
 function Fundamentals() {
    
       return (
-        <div className="bg-white w-[95%]  xl:w-[55.0625rem] max-w-[55.0625rem] mx-auto  pt-12 pb-16 lg:pt-6 lg:px-6 lg:pb-10 rounded-2xl xl:mb-24">
+        <div className=" bg-white w-[95%]  xl:w-[55.0625rem] max-w-[55.0625rem] mx-auto  pt-12 pb-16 lg:pt-6 lg:px-6 lg:pb-10 rounded-2xl xl:mb-24">
           <h1 className="text-2xl font-bold  leading-5 mb-4 lg:pb-4">
             About Bitcoin?
           </h1>

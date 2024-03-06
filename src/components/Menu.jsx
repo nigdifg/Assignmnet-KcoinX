@@ -4,6 +4,7 @@ import Fundamentals from './Fundamentals';
 import Sentiments from './Sentiments';
 import Teams from './Teams';
 import Tokenomics from './Tokenomics';
+import Like from './Like';
 
 function Menu() {
     const [showPerformance, setShowPerformance] = useState(false);
@@ -26,22 +27,24 @@ function Menu() {
                 <button onClick={()=>setShowTokenomics(true) } className="text-base font-medium leading-5">Tokenomics</button>
             </ul>
         </div>
-        {
-            showPerformance && <Performance />  
-        }
-        {
-        showFundamentals && <Fundamentals />
-        }
-        {
-        showsentiments && <Sentiments />
-        }
-        {
-        showTeams && <Teams />
-        }
-        {
-        showTokenomics && <Tokenomics />
-        }
-
+        <div className='h-auto'>
+            {
+                showPerformance && <Performance />  
+            }
+            {
+                showFundamentals && <Fundamentals />
+            }
+            {
+                showsentiments && <Sentiments />
+            }
+            {
+                showTeams && <Teams />
+            }
+            {
+                showTokenomics && <Tokenomics />
+            }
+            <Like />
+        </div>
         </>
     )
 }
