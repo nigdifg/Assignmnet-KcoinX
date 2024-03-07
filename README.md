@@ -1,6 +1,3 @@
-Certainly! Here's a basic README template you can use for your project:
-
-```markdown
 # KoinX Frontend Intern Assignment
 
 This project is the solution to the Frontend Intern Assignment provided by KoinX. It involves converting a Figma design to code using React.js or Next.js, integrating various APIs, and ensuring responsive UI design.
@@ -32,7 +29,6 @@ The primary goal of this project is to convert the Figma design to code while fu
 - Integration of TradingView's chart widget
 - Display of trending coins and their details
 - Responsive UI design
-- Dynamic token display using URL (optional)
 
 ## API Integration
 
@@ -46,7 +42,7 @@ To use this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/koinx-frontend-intern-assignment.git
+git clone https://github.com/nigdifg/koinx-frontend-intern-assignment.git
 ```
 
 2. Install dependencies:
@@ -72,9 +68,6 @@ To set up this project, you need Node.js and npm installed on your system. Then,
 
 This project can be deployed using platforms like Netlify or Vercel. Make sure to configure the deployment settings according to your requirements.
 
-## Contributing
-
-Contributions to this project are welcome. Feel free to fork the repository and submit pull requests with your improvements.
 
 ## License
 
