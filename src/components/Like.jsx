@@ -41,7 +41,7 @@ const Like = (props) => {
 
                             }' className="mb-40 relative justify-between gap-5 items-center">
                             <div className="bg-white hs-carousel relative w-full rounded-lg">
-                                <div className="hs-carousel-body bg-white absolute flex flex-nowrap transition-transform duration-700">
+                                <div className="hs-carousel-body bg-white absolute flex flex-nowrap transition-transform duration-500">
                                     {trending ? (
                                         trending.coins.slice(0, 8).map((coin, index) => (
                                             <div key={index} className="hs-carousel-slide">
@@ -49,7 +49,7 @@ const Like = (props) => {
                                                     <div className='flex flex-col items-center'>
                                                         <img src={coin.item.small} alt={coin.item.name} className="m-6 w-10 h-10" />
                                                         <p className="text-sm text-gray-500">{coin.item.symbol}</p>
-                                                        <img src={coin.item.sparkline} alt="{coin.item.name}" />
+                                                        <img src={coin.item.data.sparkline} alt="{coin.item.name}" />
                                                     </div>
                                                 </div>
                                             </div>
