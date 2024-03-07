@@ -7,7 +7,7 @@ import Tokenomics from './Tokenomics';
 import Like from './Like';
 
 function Menu() {
-    const [showPerformance, setShowPerformance] = useState(false);
+    const [showPerformance, setShowPerformance] = useState(true);
     const [showFundamentals, setShowFundamentals] = useState(false);
     const [showsentiments, setShowsentiments] = useState(false);
     const [showTeams, setShowTeams] = useState(false);
@@ -16,9 +16,9 @@ function Menu() {
 
     return (
         <>
-        <div className="relative flex justify-between items-center">
-            <ul className="flex flex-row justify-between gap-10 items-center">
-                <button onClick={() => setShowPerformance(true)} className="text-base text-blue font-bold leading-5">Overview</button>
+        <div className="relative justify-between items-center">
+            <ul className="lg:flex sm:flex sm:flex-col lg:flex-row md:flex-row justify-between gap-10 items-center">
+                <button onClick={() => setShowPerformance(true)} className="bg-blue-400 underline text-base text-blue font-bold leading-5">Overview</button>
                 <button onClick={()=>setShowFundamentals(true) } className="text-base font-medium leading-5">Fundamnetals</button>
                 <button  className="text-base font-medium leading-5">News Insight</button>
                 <button onClick={()=>setShowsentiments(true) } className="text-base font-medium leading-5">Sentiments</button>

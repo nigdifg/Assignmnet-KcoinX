@@ -20,17 +20,21 @@ const Like = (props) => {
     }, []);
 
     return (
-        <div className="mt-10 w-full items-center rounded-lg sm:py-[200px]  lg:py-[40px]">
-            <div className="justify-center gap-[45px]">
+        <div className="overflow-hidden bg-white mt-10 w-full rounded-lg sm:py-[200px]  lg:py-[40px]">
+            <div className="justify-center items-center gap-[45px]">
                 {/* text */}
-                <div className="flex flex-row items-center gap-5">
+                <div className="flex ml-0 flex-row items-center gap-5">
                     <div>
-                        <h4 className="ml-10 mt-0 font-bold text-2xl text-black">
+                        <h4 className="ml-10 border-b mt-0 font-bold text-2xl justify-center items-center text-black">
                             You May Also Like
+                        </h4>
+
+                        <h4 className="border-b ml-60 justify-between mr-60 mt-5 font-bold text-2xl text-black">
+                            Trending Coins
                         </h4>
                         <div data-hs-carousel='{
                                 "loadingClasses": "opacity-0",
-                                "isAutoPlay": false,
+                                "isAutoPlay": true,
                                 "isInfinite": false,
                                 "autoplaySpeed": 5000,
                                 "spaceBetween": 20
@@ -57,14 +61,14 @@ const Like = (props) => {
                             </div>
 
                             <button type="button" className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                                <span className="sr-only">Previous</span>
+                                {/* <span className="sr-only">Previous</span> */}
                                 <span className="text-2xl" aria-hidden="true">
                                   {/* Your previous icon here */}
                                   <GrLinkPrevious/>
                                 </span>
                             </button>
                             <button type="button" className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                                <span className="sr-only">Next</span>
+                                {/* <span className="sr-only">Next</span> */}
                                 <span className="text-2xl" aria-hidden="true">
                                   {/* Your next icon here */}
                                   <GrLinkNext />
