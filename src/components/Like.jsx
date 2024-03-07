@@ -29,7 +29,7 @@ const Like = (props) => {
                             You May Also Like
                         </h4>
 
-                        <h4 className="border-b ml-60 justify-between mr-60 mt-5 font-bold text-2xl text-black">
+                        <h4 className="border-b ml-60 px-5 justify-between mr-60 mt-5 font-bold text-2xl text-black">
                             Trending Coins
                         </h4>
                         <div data-hs-carousel='{
